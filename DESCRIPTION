@@ -1,0 +1,55 @@
+Package: pancada
+Type: Package
+Title: PanCaDa
+Description: R Package to querying, fetching, and analysis of datasets from Pan Cancer Database (PanCaDa).
+Version: 0.99.0
+Authors@R: 
+    c(person(given = "Itamar José",
+             family = "Guimarães Nunes",
+             role = c("aut", "cre"),
+             email = "nunesijg@gmail.com",
+             comment = c(ORCID = "0000-0002-6246-4658")),
+      person(given = "Bruno",
+             family = "César Feltes",
+             email = "bcfeltes@gmail.com",
+             role = "ctb",
+             comment = c(ORCID = "0000-0002-2825-8295")),
+      person(given = "Joice",
+             family = "de Faria Poloni",
+             email = "joicefpoloni@gmail.com",
+             role = "ctb",
+             comment = c(ORCID = "0000-0002-3896-6404")),
+      person(given = "Marcio",
+             family = "Dorn",
+             email = "mdorn@inf.ufrgs.br",
+             role = "ctb",
+             comment = c(ORCID = "0000-0001-8534-3480")))
+URL: https://github.com/nunesijg/pancada
+BiocType: Software
+biocViews: DataImport, GeneExpression, Microarray, RNASeq, SystemsBiology, Transcriptomics
+License: LGPL-2
+Encoding: UTF-8
+Depends: R (>= 4.1)
+Imports:
+    assertthat,
+    Biobase,
+    jsonlite,
+    methods,
+    tools,
+    utils
+Suggests: 
+    devtools,
+    knitr,
+    rmarkdown,
+    roxygen2,
+    limma,
+    testthat (>= 3.0.0)
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.1.2
+VignetteBuilder: knitr
+Collate: 
+    'LocalDbCache.R'
+    'cumida.R'
+    'esetprocess.R'
+    'matrixhelpers.R'
+    'pancada-package.R'
